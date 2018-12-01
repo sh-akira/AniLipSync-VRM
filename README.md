@@ -14,13 +14,13 @@ VRMモデルでリミテッドアニメ風のリップシンクを実現する�
 - [UniVRM 0.45](https://github.com/dwango/UniVRM/releases)
 
 # サンプル
-`Assets/AniLipSync-VRM/Examples/Scenes/AniLipSync-VRM.unity` にサンプルシーンがあります。
-[OVRLipSync 1.28.0](https://developer.oculus.com/downloads/package/oculus-lipsync-unity/1.28.0/)と[UniVRM 0.45](https://github.com/dwango/UniVRM/releases)をインポートし、
+`Assets/AniLipSync-VRM/Examples/Scenes/AniLipSync-VRM.unity` にサンプルシーンがあります。  
+[OVRLipSync 1.28.0](https://developer.oculus.com/downloads/package/oculus-lipsync-unity/1.28.0/)と[UniVRM 0.45](https://github.com/dwango/UniVRM/releases)をインポートし、  
 [ニコニ立体ちゃんVRMモデル](https://3d.nicovideo.jp/works/td32797)をダウンロードし、AliciaSolid.vrmを
-Assets/Models/AliciaSolid.vrmにフォルダを作ってコピーしてください。
-サンプルシーンを開きHierarchy上にAliciaSolidのPrefabを配置したら、AniLipSync-VRMのAnim Morph Target (Script)の
-Blend Shape ProxyにAliciaSolidを設定してください。
-実行してマイクに喋ると口が動きます。
+Assets/Models/AliciaSolid.vrmにフォルダを作ってコピーしてください。  
+サンプルシーンを開きHierarchy上にAliciaSolidのPrefabを配置したら、AniLipSync-VRMのAnim Morph Target (Script)の  
+Blend Shape ProxyにAliciaSolidを設定してください。  
+実行してマイクに喋ると口が動きます。  
 
 # 使い方
 1. [OVRLipSync 1.28.0](https://developer.oculus.com/downloads/package/oculus-lipsync-unity/1.28.0/)をインポート
@@ -33,7 +33,7 @@ Blend Shape ProxyにAliciaSolidを設定してください。
 5. `AniLipSync-VRM` GameObjectの `AnimMorphTarget` の各プロパティをインスペクタで編集（BlendShapeProxyにはシーンに配置したVRMモデルを入れてください）
 
 # AnimMorphTargetの各プロパティの説明
-以下説明は元の[AniLipSync](https://github.com/XVI/AniLipSync)と同じです。
+以下説明は元の[AniLipSync](https://github.com/XVI/AniLipSync)とBlendShapeProxy以外同じです。
 ## Transition Curves
 aa, E, ih, oh, ou のそれぞれの音素へ遷移する際に、BlendShapeの重みを時間をかけて変化させるためのカーブです。
 
@@ -56,11 +56,8 @@ Transition Curveの縦軸を 0.0 ～ 1.0 の範囲にしておいて 100 の倍�
 
 リミテッドアニメ風の効果を得ることができます。
 
-## Skinned Mesh Renderer
-唇のBlendShapeを持ったSkinnedMeshRendererを指定してください。
-
-## Viseme To Blend Shape
-aa, E, ih, oh, ouの順でBlendShapeのIndexを指定してください。
+## Blend Shape Proxy
+BlendShapeProxyを持ったVRMモデルを指定してください。
 
 ## Smooth Amount
 OVRLipSyncのSmooth amountの値を設定できます。
