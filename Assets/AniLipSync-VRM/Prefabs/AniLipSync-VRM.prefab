@@ -219,7 +219,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  curveAmplifier: 100
+  curveAmplifier: 1
   weightThreashold: 2
   frameRate: 12
   blendShapeProxy: {fileID: 0}

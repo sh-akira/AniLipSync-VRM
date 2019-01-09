@@ -11,7 +11,7 @@ namespace AniLipSync.VRM
         public AnimationCurve[] transitionCurves = new AnimationCurve[5];
 
         [Tooltip("カーブの値をBlendShapeに適用する際の倍率")]
-        public float curveAmplifier = 100.0f;
+        public float curveAmplifier = 1.0f;
 
         [Range(0.0f, 100.0f), Tooltip("この閾値未満の音素の重みは無視する")]
         public float weightThreashold = 2.0f;
