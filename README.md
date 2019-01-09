@@ -3,7 +3,7 @@ VRMモデルでリミテッドアニメ風のリップシンクを実現する�
 [AniLipSync](https://github.com/XVI/AniLipSync)がベースになっています。
 
 # ダウンロード
-[AniLipSync-VRM v1.0.0](https://github.com/sh-akira/AniLipSync-VRM/releases/download/v1.0.0/AniLipSync-VRM.unitypackage)
+[AniLipSync-VRM v1.0.1](https://github.com/sh-akira/AniLipSync-VRM/releases/download/v1.0.1/AniLipSync-VRM_1.0.1.unitypackage)
 
 # 開発環境
 - Windows 10
