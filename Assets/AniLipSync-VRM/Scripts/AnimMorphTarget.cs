@@ -24,11 +24,11 @@ namespace AniLipSync.VRM
 
         [Tooltip("aa, E, ih, oh, ouの順で割り当てるBlendShapeのindex")]
         private Dictionary<BlendShapeKey, float> defaultValueDictionary = new Dictionary<BlendShapeKey, float> {
-            {new BlendShapeKey(BlendShapePreset.A), 0.0f },
-            {new BlendShapeKey(BlendShapePreset.E), 0.0f },
-            {new BlendShapeKey(BlendShapePreset.I), 0.0f },
-            {new BlendShapeKey(BlendShapePreset.O), 0.0f },
-            {new BlendShapeKey(BlendShapePreset.U), 0.0f },
+            {BlendShapeKey.CreateFromPreset(BlendShapePreset.A), 0.0f },
+            {BlendShapeKey.CreateFromPreset(BlendShapePreset.E), 0.0f },
+            {BlendShapeKey.CreateFromPreset(BlendShapePreset.I), 0.0f },
+            {BlendShapeKey.CreateFromPreset(BlendShapePreset.O), 0.0f },
+            {BlendShapeKey.CreateFromPreset(BlendShapePreset.U), 0.0f },
         };
         private List<BlendShapeKey> keyList;
 
